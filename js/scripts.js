@@ -23,10 +23,12 @@ $(document).ready(function() {
     madlibs.forEach(function(madlib) {
      
       // $('.output').replaceWith('<ul>' + madlib + '</ul>');
-      $('.output').text(madlib);
+        $('.output').append('<ul>' + madlib + '</ul>');
+      // $('.output').append(madlib);
       console.log(madlib);
     });
     
+
 
     // $(".person1").text(person1Input);
     // $(".person2").text(person2Input);
